@@ -1,0 +1,8 @@
+-- Sample FPS Player Script
+local jump = 0
+if window:KeyDown(KEY_SPACE) then
+    if self:GetAirborne() == false then jump = 6 end
+end
+local move = 0
+if window:KeyDown(KEY_W) then move = move + 1 end
+if window:KeyDown(KEY_S) then move = move - 1 end
